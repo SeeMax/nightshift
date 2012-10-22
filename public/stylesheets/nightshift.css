@@ -2,16 +2,59 @@ body {
   background-color: #fefcf5;
   text-align: center; }
 
+.hairline {
+  border-top: 1px solid dimgrey;
+  padding: 5px; }
+
 .content {
   width: 960px;
   margin: 0px auto;
-  border: solid 1px #cc6600;
-  color: #525252;
-  font-family: "mic-32-new-rounded-web",sans-serif;
-  border: red 1-x solid; }
+  color: dimgrey;
+  font-family: "mic-32-new-rounded-web",sans-serif; }
 
 .name {
-  font-size: 80px;
-  padding: 8px;
-  margin: 8px;
-  border-color: #fefcf5; }
+  font-weight: bold;
+  font-size: 48px;
+  letter-spacing: 10px;
+  margin: 0px 8px;
+  border: solid 1px #cc6600; }
+
+nav {
+  border: solid 1px #cc6600;
+  display: inline-block; }
+  nav ul {
+    list-style-type: none;
+    text-align: left;
+    display: inline; }
+    nav ul li {
+      padding: 0px 10px;
+      display: inline;
+      color: dimgrey;
+      font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+      font-size: 12px;
+      font-weight: regular; }
+      nav ul li a {
+        text-decoration: none;
+        color: dimgrey; }
+
+.section_title {
+  float: left;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 10px;
+  margin: 0px; }
+
+.schedule {
+  height: 400px;
+  padding-top: 400px;
+  border: 1px solid #cc6600; }
+
+.work {
+  height: 400px;
+  padding-top: 400px;
+  border: 1px solid #cc6600; }
+
+.contact {
+  height: 400px;
+  padding-top: 400px;
+  border: 1px solid #cc6600; }

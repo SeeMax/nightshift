@@ -1,0 +1,30 @@
+$tan: #fefcf5;
+$gray: #696969;
+$orange: #cc6600;
+$margin: 16px;
+$auto: 0px auto;
+
+
+body{
+background-color:$tan;
+text-align:center;
+}
+
+
+.content{
+  width:960px;
+  margin:$auto;
+  border: solid 1px $orange;
+  color: darken($gray, 9%);
+  font-family: "mic-32-new-rounded-web",sans-serif; 
+  border:red 1-x solid;
+}
+
+.name {
+  font-size:80px;
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $tan;
+}
+
+

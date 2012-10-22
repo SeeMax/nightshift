@@ -1,0 +1,17 @@
+body {
+  background-color: #fefcf5;
+  text-align: center; }
+
+.content {
+  width: 960px;
+  margin: 0px auto;
+  border: solid 1px #cc6600;
+  color: #525252;
+  font-family: "mic-32-new-rounded-web",sans-serif;
+  border: red 1-x solid; }
+
+.name {
+  font-size: 80px;
+  padding: 8px;
+  margin: 8px;
+  border-color: #fefcf5; }

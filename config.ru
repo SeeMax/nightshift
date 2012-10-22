@@ -1,2 +1,2 @@
-require './hello'
+require './nightshift'
 run Sinatra::Application

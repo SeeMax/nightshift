@@ -3,6 +3,16 @@ $typecolor: #696969;
 $orange: #cc6600;
 $margin: 16px;
 $auto: 0px auto;
+$times: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+$gothic: "mic-32-new-rounded-web",sans-serif;
+
+@mixin gothic_type{
+line-height:30px;
+letter-spacing:5px;
+font-family:$gothic;
+font-size:20px;
+font-weight:bold;
+}
 
 body{
 background-color:$tan;
@@ -10,6 +20,7 @@ text-align:center;
 }
 
 .hairline{ 
+  opacity:.75;
   border-top:1px solid $typecolor;
   padding:5px;
 }
@@ -18,7 +29,7 @@ text-align:center;
   width:960px;
   margin:$auto;
   color:$typecolor;
-  font-family: "mic-32-new-rounded-web",sans-serif; 
+  font-family: $gothic; 
 }
 
 .name {
@@ -39,7 +50,7 @@ nav{
         padding:0px 10px;
         display:inline;
         color:$typecolor; 
-        font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+        font-family: $times;
         font-size:12px;
         font-weight:regular;
           a{text-decoration:none; 
@@ -52,34 +63,47 @@ nav{
 
 .section_title{
   float:left;
+  text-align:left;
+  width:100%;
   font-weight:bold;
   font-size:24px;
-  letter-spacing:10px;
-  margin: 0px; 
+  letter-spacing:5px;
+  padding: 20px 0px 0px 20px;
+  border:solid 1px red; 
 }
 
 .header{
-
+  .about{
+    width:600px;
+    margin:$auto;
+      p1{
+       @include gothic_type;
+      }
+      p2{
+        line-height:0px;
+        font-size:12px;        
+        font-family:$times;  
+      }
+  }
 }
 
 
 .schedule{
-height:400px;
-padding-top:400px;
-border:1px solid $orange;
+height:600px;
 }
 
 .work{
-height:400px;
-padding-top:400px;
-border:1px solid $orange;
+height:600px;
 }
 
 
 .contact{
-height:400px;
-padding-top:400px;
-border:1px solid $orange;
+  height:600px;
+    .thanks{
+      float:left;
+      text-align:left;
+        p1{
+       @include gothic_type;        
+       }
+    }
 }
-
-

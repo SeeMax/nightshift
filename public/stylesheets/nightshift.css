@@ -1,81 +1,155 @@
+@font-face {
+  font-family: 'landrygothicregular';
+  src: url("/fonts/landrygothic-webfont.eot");
+  src: url("/fonts/landrygothic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/landrygothic-webfont.woff") format("woff"), url("/fonts/landrygothic-webfont.ttf") format("truetype"), url("/fonts/landrygothic-webfont.svg#landrygothicregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   background-color: #fefcf5;
-  text-align: center; }
+  text-align: center;
+  min-width: 1600px; }
+
+#top_bar {
+  position: relative;
+  margin: 0px auto;
+  width: 1600px;
+  padding: 0px 0px 60px 0px; }
+  #top_bar #clock {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    display: inline-block;
+    height: 27px;
+    width: 27px; }
+  #top_bar #moon {
+    position: absolute;
+    top: 30px;
+    left: 725px;
+    width: 120px;
+    padding: 0px 0px 0px 20px;
+    background-color: #fefcf5;
+    z-index: 100; }
+  #top_bar #icons_sm {
+    position: absolute;
+    top: 12px;
+    left: 1480px; }
+    #top_bar #icons_sm img {
+      display: inline-block; }
 
 .hairline {
+  width: 100%;
   opacity: .75;
-  border-top: 1px solid dimgrey;
-  padding: 5px; }
+  border-top: 1px solid dimgrey; }
 
-.content {
-  width: 960px;
+#thickline {
+  position: absolute;
+  top: 283px;
+  height: 305px;
+  width: 100%;
+  background-color: dimgrey;
+  z-index: -1; }
+
+#content {
   margin: 0px auto;
   color: dimgrey;
-  font-family: "mic-32-new-rounded-web", sans-serif; }
+  font-family: "landrygothicregular", sans-serif; }
 
-.name {
-  font-weight: bold;
-  font-size: 48px;
-  letter-spacing: 10px;
-  margin: 0px 8px;
-  border: solid 1px #cc6600; }
-
-nav {
-  border: solid 1px #cc6600;
-  display: inline-block; }
-  nav ul {
-    list-style-type: none;
-    text-align: left;
-    display: inline; }
-    nav ul li {
-      padding: 0px 10px;
-      display: inline;
-      color: dimgrey;
-      font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-      font-size: 12px;
-      font-weight: regular; }
-      nav ul li a {
-        text-decoration: none;
-        color: dimgrey; }
+#header {
+  position: relative;
+  display: inline-block;
+  margin: 0px auto;
+  padding: 10px 0px; }
+  #header #name {
+    font-size: 48px;
+    margin: 0px 8px;
+    padding: 70px 0px 0px 0px; }
+  #header nav {
+    padding: 10px 0px 20px 0px;
+    display: inline-block; }
+    #header nav ul {
+      list-style-type: none;
+      text-align: left;
+      display: inline; }
+      #header nav ul li {
+        padding: 0px 30px;
+        display: inline;
+        color: dimgrey;
+        font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+        font-size: 14px; }
+        #header nav ul li a {
+          text-decoration: none;
+          color: dimgrey; }
+  #header #image {
+    margin: 0px auto; }
+  #header p {
+    padding-top: 29px;
+    line-height: 30px;
+    font-family: "landrygothicregular", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 55px; }
+  #header #guy_icon {
+    padding: 70px 0px 0px 0px;
+    margin: 0px auto -20px auto;
+    width: 500px; }
+    #header #guy_icon #guy {
+      position: relative;
+      top: -40px; }
 
 .section_title {
-  float: left;
-  text-align: left;
-  width: 100%;
+  line-height: 30px;
+  font-family: "landrygothicregular", sans-serif;
+  font-size: 25px;
   font-weight: bold;
-  font-size: 24px;
-  letter-spacing: 5px;
-  padding: 20px 0px 0px 20px;
-  border: solid 1px red; }
+  vertical-align: top;
+  display: inline-block;
+  margin: 25px 0px 0px 20px; }
 
-.header .about {
-  width: 600px;
-  margin: 0px auto; }
-  .header .about p1 {
-    line-height: 30px;
-    letter-spacing: 5px;
-    font-family: "mic-32-new-rounded-web", sans-serif;
-    font-size: 20px;
-    font-weight: bold; }
-  .header .about p2 {
-    line-height: 0px;
-    font-size: 12px;
+.section_image {
+  display: inline-block; }
+
+#about {
+  margin: 0px auto;
+  padding: 0px 0px 60px 0px; }
+  #about p {
+    line-height: 34px;
+    font-size: 24px;
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
 
-.schedule {
-  height: 600px; }
+#schedule {
+  text-align: left;
+  height: 600px;
+  width: 1200px;
+  margin: 0px auto;
+  padding-top: 60px;
+  border: red 1px solid; }
 
-.work {
-  height: 600px; }
+#work {
+  text-align: left;
+  height: 600px;
+  width: 1200px;
+  margin: 0px auto;
+  padding-top: 60px;
+  border: red 1px solid; }
 
-.contact {
-  height: 600px; }
-  .contact .thanks {
+#contact {
+  text-align: left;
+  height: 600px;
+  width: 1200px;
+  margin: 0px auto;
+  padding-top: 60px;
+  border: red 1px solid; }
+  #contact #thanks {
     float: left;
     text-align: left; }
-    .contact .thanks p1 {
+    #contact #thanks p1 {
       line-height: 30px;
-      letter-spacing: 5px;
-      font-family: "mic-32-new-rounded-web", sans-serif;
-      font-size: 20px;
+      font-family: "landrygothicregular", sans-serif;
+      font-size: 25px;
       font-weight: bold; }
+
+#bottom_border {
+  width: 100%;
+  height: 24px;
+  background-color: dimgrey; }

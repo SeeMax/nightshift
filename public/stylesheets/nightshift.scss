@@ -6,16 +6,7 @@ $auto: 0px auto;
 $times: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 $gothic: 'landrygothicregular', sans-serif;
 
-@font-face {
-    font-family: 'landrygothicregular';
-    src: url('/fonts/landrygothic-webfont.eot');
-    src: url('/fonts/landrygothic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/landrygothic-webfont.woff') format('woff'),
-         url('/fonts/landrygothic-webfont.ttf') format('truetype'),
-         url('/fonts/landrygothic-webfont.svg#landrygothicregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 @mixin gothic_type {
   line-height:30px;

@@ -6,25 +6,22 @@
   <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/reset.css" />
   <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/nightshift.css" />
   <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/fontface.css" />
-  <script src="/javascripts/jquery.js"></script>
-  <script src="/javascripts/application.js"></script>
-  <script src="/javascripts/prototype.js"></script>
-  <script src="/javascripts/scriptaculous.js?load=effects,builder"></script>
-  <script type="text/javascript" src="//use.typekit.net/atq0wwr.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/shadowbox.css" />
+  <script type="text/javascript" src="/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="/javascripts/shadowbox.js"></script>
+  <script type="text/javascript" src="/javascripts/clock.js"></script>
 
-  <link rel="icon" href="images/nighshift_fav.jpg" type="image/jpg">
 
-  <link rel="stylesheet" type="text/css" href="/shadowbox/shadowbox.css">
-  <script type="text/javascript" src="/shadowbox/shadowbox.js"></script>
   <script type="text/javascript">
   Shadowbox.init({
     overlayOpacity: .75,
     });
   </script>
+
+  <link rel="icon" href="/images/nighshift_fav.jpg" type="image/jpg">
+
 </head>
 <body>
-  
    <div id='content'>
       <%= yield %>
     </div><!-- content -->

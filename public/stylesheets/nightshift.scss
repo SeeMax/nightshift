@@ -33,12 +33,23 @@ body {
   min-width:1600px;
 }
 
+  
+#my_clock{
+  font-family:$gothic;
+  color:$orange;
+  border:1px solid red;
+  width:100px;
+  height:30px;
+}
+
 #top_bar{
   position:relative;
   margin:$auto;
   width:1600px;
   padding:0px 0px 60px 0px;
     
+
+  
   #clock{
     position:absolute;
     top:12px;
@@ -47,6 +58,7 @@ body {
     height:27px;
     width:27px;
   }
+  
 
   #moon{
     position:absolute;
@@ -76,9 +88,10 @@ body {
 
 #thickline{ 
   position:absolute;
-  top:283px;
+  top:285px;
   height:305px;
   width:100%;
+  min-width:1600px;
   background-color:$typecolor;
   z-index:-1;
 }

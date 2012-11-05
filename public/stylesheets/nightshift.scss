@@ -16,13 +16,18 @@ $gothic: 'landrygothicregular', sans-serif;
 }
 
 @mixin sections{
-  text-align:left;
-  height:600px;    
+  text-align:left;    
   width:1200px;
   margin:$auto;
-  padding-top:60px;
+  padding-top:55px;
   border:red 1px solid;
+}
 
+@mixin section_content{
+  text-align:center;
+  min-height:200px;
+  width:937px;
+  margin:$auto;
 }
 
 
@@ -30,7 +35,7 @@ $gothic: 'landrygothicregular', sans-serif;
 body {
   background-color: $tan;
   text-align:center;
-  min-width:1600px;
+  min-width:1200px;
 }
 
   
@@ -38,8 +43,6 @@ body {
   font-family:$gothic;
   color:$orange;
   border:1px solid red;
-  width:100px;
-  height:30px;
 }
 
 #top_bar{
@@ -188,8 +191,72 @@ body {
 
 
 #schedule{
-    @include sections;  
+@include sections;  
+    
+  #content{
+  @include section_content;
+
+    #calendar{
+    padding: 70px 0px 50px 0px;
+    margin:$auto;
+    }
+  
+    #copy p{
+    font:24px/35px $times $typecolor;
+      
+      a{
+        text-decoration:underline; 
+        color:$typecolor;
       }
+    }
+  
+    #book_me{
+    margin: 120px auto 80px auto;
+    
+    }
+    
+    input{
+    vertical-align:middle;
+    border-radius:8px;
+    box-shadow:inset -1px 2px 3px 0px #404040;
+    border:4px solid #cfcdcd;
+    width:520px;
+    height:65px;
+    font-family:$times;
+    font-size:25px;
+    color:#cccccc;  
+    margin-top:1px;   
+    padding: 0px 0px 0px 10px;
+    }
+    
+    input:focus{
+    outline:none;
+    box-shadow: 0px 0px 7px 3px $typecolor;
+    }
+    
+    button{
+    vertical-align:middle;
+    border-radius:8px;
+    border:0px;
+    background-color:$orange;     
+    padding: 19px 10px 16px 20px;
+      
+      p{
+      display:inline-block;
+      font-family:$gothic;
+      font-size:28px;
+      color:$tan;
+      }
+      
+            
+      img{
+      vertical-align:top;
+      display:inline-block;
+      margin:6px 10px 0px 8px;
+      }
+    }
+  }
+}
 
 #work{
   @include sections;  
@@ -199,12 +266,34 @@ body {
 #contact{
   @include sections;
   
-  #thanks{
-  float:left;
-  text-align:left;
+  #content{
+  @include section_content;
+  padding-bottom: 40px;
+  
+    #contact_map{
+    padding:15px 0px 35px 0px;
+    }
+    
+    ul{
+    list-style-type:none;
+    margin:$auto;
+    
+      li{
+      display:inline-block;
+      padding:0px 35px;
+      margin:$auto;
+      }
+    }
+  
+    #thanks{
+    padding-top:40px;
+    text-align:left;
 
-    p1{
-      @include gothic_type;        
+      p{
+        text-align:left;
+        text-size:24px;
+        @include gothic_type;        
+      }
     }
   }
 }
@@ -212,6 +301,6 @@ body {
 
 #bottom_border{
   width:100%;
-  height:24px;
+  height:16px;
   background-color:$typecolor;
 }

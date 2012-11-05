@@ -24,4 +24,4 @@ function updateClock ( )
 
   // Update the time display
   document.getElementById("my_clock").firstChild.nodeValue = currentTimeString;
-}
+};

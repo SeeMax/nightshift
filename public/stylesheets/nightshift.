@@ -12,14 +12,16 @@ body {
   position: relative;
   margin: 0px auto;
   width: 1600px;
-  padding: 0px 0px 60px 0px; }
+  padding: 0px 0px 60px 0px;
+  border: 1px solid red; }
   #top_bar #clock {
     position: absolute;
     top: 12px;
     left: 15px;
     display: inline-block;
     height: 27px;
-    width: 27px; }
+    width: 27px;
+    border: 1px solid red; }
   #top_bar #moon {
     position: absolute;
     top: 30px;
@@ -27,13 +29,15 @@ body {
     width: 120px;
     padding: 0px 0px 0px 20px;
     background-color: #fefcf5;
-    z-index: 100; }
+    z-index: 100;
+    border: 1px solid red; }
   #top_bar #icons_sm {
     position: absolute;
     top: 12px;
     left: 1480px; }
     #top_bar #icons_sm img {
-      display: inline-block; }
+      display: inline-block;
+      border: 1px solid red; }
 
 .hairline {
   width: 100%;

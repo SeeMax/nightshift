@@ -12,17 +12,18 @@ body {
   position: relative;
   margin: 0px auto;
   width: 1600px;
-  padding: 0px 0px 60px 0px; }
+  height: 50px;
+  padding: 0px 0px 0px 0px; }
   #top_bar #clock {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 15px;
     display: inline-block;
     height: 27px;
     width: 27px; }
   #top_bar #moon {
     position: absolute;
-    top: 30px;
+    top: 15px;
     left: 725px;
     width: 120px;
     padding: 0px 0px 0px 20px;
@@ -30,7 +31,7 @@ body {
     z-index: 100; }
   #top_bar #icons_sm {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 1480px; }
     #top_bar #icons_sm img {
       display: inline-block; }
@@ -42,7 +43,7 @@ body {
 
 #thickline {
   position: absolute;
-  top: 285px;
+  top: 275px;
   height: 305px;
   width: 100%;
   min-width: 1600px;
@@ -136,7 +137,7 @@ body {
         text-decoration: underline;
         color: dimgrey; }
     #schedule #content #book_me {
-      margin: 120px auto 80px auto; }
+      margin: 80px auto 80px auto; }
     #schedule #content input {
       vertical-align: middle;
       border-radius: 8px;

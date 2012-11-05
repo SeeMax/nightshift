@@ -49,13 +49,14 @@ body {
   position:relative;
   margin:$auto;
   width:1600px;
-  padding:0px 0px 60px 0px;
+  height:50px;
+  padding:0px 0px 0px 0px;
     
 
   
   #clock{
     position:absolute;
-    top:12px;
+    top:10px;
     left:15px;
     display:inline-block;
     height:27px;
@@ -65,7 +66,7 @@ body {
 
   #moon{
     position:absolute;
-    top:30px;
+    top:15px;
     left:725px;
     width: 120px;
     padding: 0px 0px 0px 20px;
@@ -75,12 +76,12 @@ body {
     
     #icons_sm{
     position:absolute;
-    top:12px;
+    top:10px;
     left:1480px;
       img{
         display:inline-block;
-      }
     }
+  }
 }
 
 .hairline{ 
@@ -91,7 +92,7 @@ body {
 
 #thickline{ 
   position:absolute;
-  top:285px;
+  top:275px;
   height:305px;
   width:100%;
   min-width:1600px;
@@ -211,7 +212,7 @@ body {
     }
   
     #book_me{
-    margin: 120px auto 80px auto;
+    margin: 80px auto 80px auto;
     
     }
     

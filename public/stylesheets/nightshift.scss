@@ -11,7 +11,7 @@ $gothic: 'landrygothicregular', sans-serif;
 @mixin gothic_type {
   line-height:30px;
   font-family:$gothic;
-  font-size:25px;
+  font-size:1.563em;
   font-weight:bold;
 }
 
@@ -36,6 +36,7 @@ body {
   background-color: $tan;
   text-align:center;
   min-width:1200px;
+  font-weight: normal;
 }
 
   
@@ -85,6 +86,13 @@ body {
 }
 
 .hairline{ 
+  min-width:1600px;
+  width:100%;
+  opacity:.75;
+  border-top:1px solid $typecolor;
+}
+
+#guy_hairline{
   width:100%;
   opacity:.75;
   border-top:1px solid $typecolor;
@@ -115,7 +123,7 @@ body {
   padding: 10px 0px;
 
   #name {
-    font-size:48px;
+    font-size:3.000em;
     margin: 0px $margin / 2;
     padding: 70px 0px 0px 0px;
   }
@@ -134,7 +142,7 @@ body {
           display:inline;
           color:$typecolor; 
           font-family: $times;
-          font-size:14px;
+          font-size:0.875em;
 
           a {
             text-decoration:none; 
@@ -184,7 +192,7 @@ body {
         
   p{
     line-height:34px;
-    font-size:24px;        
+    font-size:1.500em;        
     font-family:$times;  
   }
 }
@@ -203,7 +211,7 @@ body {
     }
   
     #copy p{
-    font:24px/35px $times $typecolor;
+    font:1.500em/35px $times $typecolor;
       
       a{
         text-decoration:underline; 
@@ -224,7 +232,7 @@ body {
     width:520px;
     height:65px;
     font-family:$times;
-    font-size:25px;
+    font-size:1.563em;
     color:#cccccc;  
     margin-top:1px;   
     padding: 0px 0px 0px 10px;
@@ -245,7 +253,7 @@ body {
       p{
       display:inline-block;
       font-family:$gothic;
-      font-size:28px;
+      font-size:1.750em;
       color:$tan;
       }
       
@@ -292,7 +300,7 @@ body {
 
       p{
         text-align:left;
-        text-size:24px;
+        text-size:1.500em;
         @include gothic_type;        
       }
     }

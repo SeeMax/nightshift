@@ -46,3 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*Added by Max to control font bolding on mobile*/
+
+h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
+    font-weight: normal;
+}

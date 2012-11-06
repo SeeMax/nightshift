@@ -38,6 +38,10 @@ body {
   font-weight: normal;
 }
 
+#content{
+  margin:$auto;
+}
+
   
 #my_clock{
   font-family:$gothic;
@@ -46,12 +50,12 @@ body {
 }
 
 #top_bar{
-  position:relative;
+position:relative;
   margin:$auto;
-  width:1600px;
+  width:1200px;
   height:50px;
   padding:0px 0px 0px 0px;
-    
+   
 
   
   #clock{
@@ -67,7 +71,7 @@ body {
   #moon{
     position:absolute;
     top:15px;
-    left:725px;
+    left:525px;
     width: 120px;
     padding: 0px 0px 0px 20px;
     background-color:$tan;
@@ -77,7 +81,7 @@ body {
     #icons_sm{
     position:absolute;
     top:10px;
-    left:1480px;
+    left:1080px;
       img{
         display:inline-block;
     }

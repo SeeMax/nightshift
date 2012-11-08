@@ -271,8 +271,16 @@ position:relative;
 }
 
 #work{
-  @include sections;  
-  }
+  @include sections;
+
+  #content{
+    margin:$auto;
+    text-align:center;
+
+
+
+  }  
+}
 
 
 #contact{

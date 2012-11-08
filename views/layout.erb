@@ -35,6 +35,25 @@
       });
   });
   </script>
+  
+  <script>
+  Shadowbox.init({ 
+          handleOversize: "resize", 
+          onOpen: function() { 
+                  if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPad/i))) { 
+                          $("#sb-container").css("top", $(window).scrollTop()); 
+                          $(window).bind('scroll', function() { 
+                                  $("#sb-container").css("top", $(window).scrollTop()); 
+                          }); 
+                  } 
+          }, 
+          onClose: function() { 
+                  if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPad/i))) { 
+                          $(window).unbind('scroll'); 
+                  } 
+          } 
+  });
+  </script>
 
   <link rel="icon" href="/images/nighshift_fav.jpg" type="image/jpg">
 

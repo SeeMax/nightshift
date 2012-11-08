@@ -41,7 +41,7 @@ body {
       display: inline-block; }
 
 .hairline {
-  min-width: 1600px;
+  min-width: 1200px;
   width: 100%;
   opacity: .75;
   border-top: 1px solid dimgrey; }
@@ -53,10 +53,10 @@ body {
 
 #thickline {
   position: absolute;
-  top: 275px;
-  height: 305px;
+  top: 268px;
+  height: 264px;
   width: 100%;
-  min-width: 1600px;
+  min-width: 1200px;
   background-color: dimgrey;
   z-index: -1; }
 
@@ -66,6 +66,7 @@ body {
   font-family: "landrygothicregular", sans-serif; }
 
 #header {
+  width: 1200px;
   position: relative;
   display: inline-block;
   margin: 0px auto;
@@ -129,8 +130,7 @@ body {
   text-align: left;
   width: 1200px;
   margin: 0px auto;
-  padding-top: 55px;
-  border: red 1px solid; }
+  padding-top: 55px; }
   #schedule #content {
     text-align: center;
     min-height: 200px;
@@ -146,21 +146,6 @@ body {
         color: dimgrey; }
     #schedule #content #book_me {
       margin: 80px auto 80px auto; }
-    #schedule #content input {
-      vertical-align: middle;
-      border-radius: 8px;
-      box-shadow: inset -1px 2px 3px 0px #404040;
-      border: 4px solid #cfcdcd;
-      width: 520px;
-      height: 65px;
-      font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-      font-size: 1.563em;
-      color: #cccccc;
-      margin-top: 1px;
-      padding: 0px 0px 0px 10px; }
-    #schedule #content input:focus {
-      outline: none;
-      box-shadow: 0px 0px 7px 3px dimgrey; }
     #schedule #content button {
       vertical-align: middle;
       border-radius: 8px;
@@ -175,24 +160,37 @@ body {
       #schedule #content button img {
         vertical-align: top;
         display: inline-block;
-        margin: 6px 10px 0px 8px; }
+        margin: 0px 10px 0px 8px; }
 
 #work {
   text-align: left;
   width: 1200px;
   margin: 0px auto;
-  padding-top: 55px;
-  border: red 1px solid; }
+  padding-top: 55px; }
   #work #content {
     margin: 0px auto;
     text-align: center; }
+    #work #content #my-slideshow {
+      text-align: center;
+      margin: 85px auto 70px auto;
+      height: 600px;
+      width: 938px; }
+      #work #content #my-slideshow .sub {
+        text-align: left;
+        position: relative;
+        top: 77px;
+        left: 20px; }
+        #work #content #my-slideshow .sub p {
+          font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+          color: #cc6600;
+          font-size: 1.2em;
+          letter-spacing: 0.1em; }
 
 #contact {
   text-align: left;
   width: 1200px;
   margin: 0px auto;
-  padding-top: 55px;
-  border: red 1px solid; }
+  padding-top: 55px; }
   #contact #content {
     text-align: center;
     min-height: 200px;

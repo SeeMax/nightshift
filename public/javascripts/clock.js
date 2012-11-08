@@ -1,27 +1,26 @@
-function updateClock ( )
+function startclock()
 {
-  var currentTime = new Date ( );
 
-  var currentHours = currentTime.getHours ( );
-  var currentMinutes = currentTime.getMinutes ( );
-  var currentSeconds = currentTime.getSeconds ( );
+var thetime=new Date();
+var nhours=thetime.getHours();
+var nmins=thetime.getMinutes();
+var nsecn=thetime.getSeconds();
+var AorP = (nhours >= 12) ? "P.M." : "A.M.";
+if (nhours>=13)
+  nhours-=12;
+if (nhours<1)
+ nhours=12;
+if (nsecn<10)
+ nsecn="0"+nsecn;
+if (nmins<10)
+ nmins="0"+nmins;
+ 
+var clock_span = document.getElementById("my_clock");
+clock_span.innerHTML = nhours+":"+nmins+":"+nsecn+" "+AorP;
 
-  // Pad the minutes and seconds with leading zeros, if required
-  currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-  currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+setTimeout('startclock()',1000);
+} 
 
-  // Choose either "AM" or "PM" as appropriate
-  var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
-
-  // Convert the hours component to 12-hour format if needed
-  currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
-
-  // Convert an hours component of "0" to "12"
-  currentHours = ( currentHours == 0 ) ? 12 : currentHours;
-
-  // Compose the string for display
-  var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
-
-  // Update the time display
-  document.getElementById("my_clock").firstChild.nodeValue = currentTimeString;
-};
+if (document.getElementById && document.createTextNode) {
+  startclock();
+}

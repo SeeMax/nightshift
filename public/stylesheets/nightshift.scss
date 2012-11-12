@@ -33,9 +33,10 @@ $gothic: 'landrygothicregular', sans-serif;
 body {
   background-color: $tan;
   text-align:center;
-  min-width:1200px;
+  min-width:1280px;
   font-weight: normal;
   color:$typecolor;
+  -webkit-text-size-adjust:100%;
 }
 
 .section_image{
@@ -102,7 +103,7 @@ padding-top:30px;
 
 
 .hairline{ 
-  min-width:1200px;
+  min-width:1280px;
   width:100%;
   opacity:.75;
   border-top:1px solid $typecolor;
@@ -119,7 +120,7 @@ padding-top:30px;
   top:269px;
   height:262px;
   width:100%;
-  min-width:1200px;
+  min-width:1280px;
   background-color:$typecolor;
   z-index:-1;
 }
@@ -334,6 +335,7 @@ left:890px;
 
 
 #bottom_border{
+  min-width:1280px;
   width:100%;
   height:16px;
   background-color:$typecolor;

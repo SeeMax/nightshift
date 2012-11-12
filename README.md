@@ -6,7 +6,7 @@ make clock work.
 
 set up url flip
 
-Set up url to a names
+keep site alive with Heroku ping
 
 design calendar image.
 Make Calendar correct.

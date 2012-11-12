@@ -2,10 +2,23 @@ body {
   background-color: #fefcf5;
   text-align: center;
   min-width: 1200px;
-  font-weight: normal; }
+  font-weight: normal;
+  color: dimgrey; }
 
-#content {
-  margin: 0px auto; }
+.section_image {
+  display: inline_block;
+  padding-right: 15px; }
+
+h2 {
+  display: inline-block;
+  font-size: 1.45em;
+  vertical-align: top;
+  padding-top: 30px; }
+
+#main_content {
+  margin: 0px auto;
+  color: dimgrey;
+  font-family: "landrygothicregular", sans-serif; }
 
 #my_clock {
   font-family: "landrygothicregular", sans-serif;
@@ -17,18 +30,18 @@ body {
   margin: 0px auto;
   width: 1200px;
   height: 50px;
-  padding: 0px 0px 0px 0px; }
+  padding: 0px 40px 0px 40px; }
   #top_bar #clock {
     position: absolute;
     top: 10px;
-    left: 15px;
+    left: 45px;
     display: inline-block;
     height: 27px;
     width: 27px; }
   #top_bar #moon {
     position: absolute;
     top: 15px;
-    left: 525px;
+    left: 555px;
     width: 120px;
     padding: 0px 0px 0px 20px;
     background-color: #fefcf5;
@@ -36,7 +49,7 @@ body {
   #top_bar #icons_sm {
     position: absolute;
     top: 10px;
-    left: 1080px; }
+    left: 1110px; }
     #top_bar #icons_sm img {
       display: inline-block; }
 
@@ -53,8 +66,8 @@ body {
 
 #thickline {
   position: absolute;
-  top: 268px;
-  height: 264px;
+  top: 269px;
+  height: 262px;
   width: 100%;
   min-width: 1200px;
   background-color: dimgrey;
@@ -62,8 +75,8 @@ body {
 
 #start_badge {
   position: absolute;
-  top: 100px;
-  left: 870px; }
+  top: -70px;
+  left: 890px; }
 
 #content {
   margin: 0px auto;
@@ -75,9 +88,9 @@ body {
   position: relative;
   display: inline-block;
   margin: 0px auto;
-  padding: 10px 0px; }
+  padding: 10px 40px; }
   #header #name {
-    font-size: 3.000em;
+    font-size: 2.800em;
     margin: 0px 8px;
     padding: 70px 0px 0px 0px; }
   #header nav {
@@ -96,46 +109,41 @@ body {
         #header nav ul li a {
           text-decoration: none;
           color: dimgrey; }
-  #header #image {
-    margin: 0px auto; }
-  #header p {
-    padding-top: 29px;
+
+#header_area {
+  position: relative;
+  width: 1200px;
+  padding: 0px 40px;
+  margin: 0px auto; }
+  #header_area #image {
+    margin: 0px auto;
+    margin-bottom: 40px; }
+  #header_area h1 {
     line-height: 30px;
     font-family: "landrygothicregular", sans-serif;
-    font-size: 1.563em;
-    line-height: 55px; }
-  #header #guy_icon {
+    font-size: 1.250em;
+    line-height: 30px; }
+  #header_area #guy_icon {
     padding: 70px 0px 0px 0px;
     margin: 0px auto -20px auto;
     width: 500px; }
-    #header #guy_icon #guy {
+    #header_area #guy_icon #guy {
       position: relative;
       top: -40px; }
-
-.section_title {
-  line-height: 30px;
-  font-family: "landrygothicregular", sans-serif;
-  font-size: 1.563em;
-  vertical-align: top;
-  display: inline-block;
-  margin: 25px 0px 0px 20px; }
-
-.section_image {
-  display: inline-block; }
-
-#about {
-  margin: 0px auto;
-  padding: 0px 0px 60px 0px; }
-  #about p {
-    line-height: 34px;
-    font-size: 1.500em;
-    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
+  #header_area #about {
+    margin: 0px auto;
+    padding: 10px 0px 60px 0px; }
+    #header_area #about p {
+      letter-spacing: 1px;
+      line-height: 20px;
+      font-size: 1.150em;
+      font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
 
 #schedule {
   text-align: left;
   width: 1200px;
   margin: 0px auto;
-  padding-top: 55px; }
+  padding: 55px 40px 0px 40px; }
   #schedule #content {
     text-align: center;
     min-height: 200px;
@@ -145,12 +153,13 @@ body {
       padding: 70px 0px 50px 0px;
       margin: 0px auto; }
     #schedule #content #copy p {
-      font: 1.5em/35px TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif dimgrey; }
+      font: 1.15em/22px TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif dimgrey;
+      letter-spacing: 1px; }
       #schedule #content #copy p a {
         text-decoration: underline;
         color: dimgrey; }
     #schedule #content #book_me {
-      margin: 80px auto 80px auto; }
+      margin: 60px auto 75px auto; }
     #schedule #content button {
       vertical-align: middle;
       border-radius: 8px;
@@ -171,7 +180,7 @@ body {
   text-align: left;
   width: 1200px;
   margin: 0px auto;
-  padding-top: 55px; }
+  padding: 55px 40px 0px 40px; }
   #work #content {
     margin: 0px auto;
     text-align: center; }
@@ -188,14 +197,14 @@ body {
         #work #content #my-slideshow .sub p {
           font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
           color: #cc6600;
-          font-size: 1.2em;
+          font-size: 1.0em;
           letter-spacing: 0.1em; }
 
 #contact {
   text-align: left;
   width: 1200px;
   margin: 0px auto;
-  padding-top: 55px; }
+  padding: 55px 40px 0px 40px; }
   #contact #content {
     text-align: center;
     min-height: 200px;
@@ -216,10 +225,8 @@ body {
       text-align: left; }
       #contact #content #thanks p {
         text-align: left;
-        text-size: 1.500em;
-        line-height: 30px;
-        font-family: "landrygothicregular", sans-serif;
-        font-size: 1.563em; }
+        font: "landrygothicregular", sans-serif 1.15em dimgrey;
+        line-height: 20px; }
 
 #bottom_border {
   width: 100%;

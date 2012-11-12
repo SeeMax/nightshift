@@ -11,14 +11,14 @@ $gothic: 'landrygothicregular', sans-serif;
 @mixin gothic_type {
   line-height:30px;
   font-family:$gothic;
-  font-size:1.563em;
+  font-size:1.250em;
 }
 
 @mixin sections{
   text-align:left;    
   width:1200px;
   margin:$auto;
-  padding-top:55px;
+  padding:55px 40px 0px 40px;
 }
 
 @mixin section_content{
@@ -35,10 +35,25 @@ body {
   text-align:center;
   min-width:1200px;
   font-weight: normal;
+  color:$typecolor;
 }
 
-#content{
+.section_image{
+  display:inline_block;
+  padding-right:15px;
+}
+
+h2{
+display:inline-block;
+font-size:1.45em;
+vertical-align:top;
+padding-top:30px;
+}
+
+#main_content{
   margin:$auto;
+  color:$typecolor;
+  font-family: $gothic;
 }
 
   
@@ -49,43 +64,42 @@ body {
 }
 
 #top_bar{
-position:relative;
+  position:relative;
   margin:$auto;
   width:1200px;
   height:50px;
-  padding:0px 0px 0px 0px;
+  padding:0px 40px 0px 40px;
    
-
-  
   #clock{
     position:absolute;
     top:10px;
-    left:15px;
+    left:45px;
     display:inline-block;
     height:27px;
     width:27px;
   }
   
-
   #moon{
     position:absolute;
     top:15px;
-    left:525px;
+    left:555px;
     width: 120px;
     padding: 0px 0px 0px 20px;
     background-color:$tan;
     z-index:100;
   }
     
-    #icons_sm{
+  #icons_sm{
     position:absolute;
     top:10px;
-    left:1080px;
-      img{
-        display:inline-block;
+    left:1110px;
+    
+    img{
+      display:inline-block;
     }
   }
 }
+
 
 .hairline{ 
   min-width:1200px;
@@ -102,8 +116,8 @@ position:relative;
 
 #thickline{ 
   position:absolute;
-  top:268px;
-  height:264px;
+  top:269px;
+  height:262px;
   width:100%;
   min-width:1200px;
   background-color:$typecolor;
@@ -112,8 +126,8 @@ position:relative;
 
 #start_badge{
 position:absolute;
-top: 100px;
-left:870px;
+top: -70px;
+left:890px;
 }
 
 #content{
@@ -127,98 +141,95 @@ left:870px;
   position:relative;
   display:inline-block;
   margin:$auto;
-  padding: 10px 0px;
+  padding: 10px 40px;
 
   #name {
-    font-size:3.000em;
+    font-size:2.800em;
     margin: 0px $margin / 2;
     padding: 70px 0px 0px 0px;
   }
 
-    nav {
-      padding: 10px 0px 20px 0px;
-      display:inline-block;
-    
-      ul {
-        list-style-type: none;
-        text-align:left;
-        display:inline;
-    
-        li {
-          padding:0px 30px;
-          display:inline;
-          color:$typecolor; 
-          font-family: $times;
-          font-size:0.875em;
+  nav{
+  padding: 10px 0px 20px 0px;
+  display:inline-block;
 
-          a {
-            text-decoration:none; 
-            color:$typecolor;
-          }
+    ul{
+      list-style-type: none;
+      text-align:left;
+      display:inline;
+
+      li{
+        padding:0px 30px;
+        display:inline;
+        color:$typecolor; 
+        font-family: $times;
+        font-size:0.875em;
+
+        a{
+          text-decoration:none; 
+          color:$typecolor;
         }
       }
     }
+  }
+}   
     
-    #image{
-      margin:$auto;
-    }
+#header_area{
+    position:relative;
+    width:1200px;
+    padding:0px 40px;
+    margin:$auto;
     
-    p{
-      padding-top: 29px;
-     @include gothic_type;
-     line-height:55px;
-    }
+  #image{
+    margin:$auto;
+    margin-bottom: 40px;
+  }
     
-    #guy_icon{
-    padding:70px 0px 0px 0px; 
-    margin:0px auto -20px auto;
-    width:500px;
-          
-      #guy{
-        position:relative;
-        top:-40px;
-      }
-    } 
-}
-
-
-.section_title{
-  @include gothic_type;
-  vertical-align:top;
-  display:inline-block;
-  margin:25px 0px 0px 20px;
-}
-
-.section_image{
-  display:inline-block;
-}
-
-#about{
-  margin:$auto;
-  padding: 0px 0px 60px 0px;
+  h1{
+   @include gothic_type;
+   line-height:30px;
+  }
+  
+  #guy_icon{
+  padding:70px 0px 0px 0px; 
+  margin:0px auto -20px auto;
+  width:500px;
         
-  p{
-    line-height:34px;
-    font-size:1.500em;        
-    font-family:$times;  
+    #guy{
+      position:relative;
+      top:-40px;
+    }
+  } 
+
+  #about{
+    margin:$auto;
+    padding: 10px 0px 60px 0px;
+        
+    p{
+      letter-spacing:1px;
+      line-height:20px;
+      font-size:1.150em;        
+      font-family:$times;  
+    }
   }
 }
 
 
 
 #schedule{
-@include sections;  
-    
+@include sections; 
+  
   #content{
   @include section_content;
-
+  
     #calendar{
     padding: 70px 0px 50px 0px;
     margin:$auto;
     }
   
     #copy p{
-    font:1.500em/35px $times $typecolor;
+    font:1.15em/22px $times $typecolor;
+    letter-spacing:1px;
       
       a{
         text-decoration:underline; 
@@ -227,7 +238,7 @@ left:870px;
     }
   
     #book_me{
-    margin: 80px auto 80px auto;
+    margin: 60px auto 75px auto;
     
     }
         
@@ -277,7 +288,7 @@ left:870px;
           p{
           font-family:$times;
           color:$orange;
-          font-size:1.2em;
+          font-size:1.0em;
           letter-spacing:0.1em;
         }
       }
@@ -314,8 +325,8 @@ left:870px;
 
       p{
         text-align:left;
-        text-size:1.500em;
-        @include gothic_type;        
+        font: $gothic 1.15em $typecolor;       
+        line-height:20px; 
       }
     }
   }

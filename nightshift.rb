@@ -4,6 +4,6 @@ get '/' do
   erb :index
 end
 
-get "/available" do
-  erb :available
+get "/booked" do
+  erb :booked
 end

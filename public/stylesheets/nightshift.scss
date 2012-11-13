@@ -226,6 +226,9 @@ left:890px;
     margin:40px auto 0px auto; 
     
     .calendar_box{
+      vertical-align:top;
+      position:relative;
+      top:0;
       display:inline-block;
       margin: 0px 2px 20px 2px;
       width:163px;
@@ -248,13 +251,14 @@ left:890px;
       }
       
       .pencil{
+        position:relative;
         margin:auto;
-        padding-top:45px;
+        top:45px;
       }
       
       .shade{
         position:absolute;
-        top:0;
+        top:0px;
         z-index:-10;
       }
     }

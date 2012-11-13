@@ -150,6 +150,9 @@ h2 {
     width: 950px;
     margin: 40px auto 0px auto; }
     #schedule #content .calendar_box {
+      vertical-align: top;
+      position: relative;
+      top: 0;
       display: inline-block;
       margin: 0px 2px 20px 2px;
       width: 163px;
@@ -167,11 +170,12 @@ h2 {
           color: #fefcf5;
           font-weight: normal; }
       #schedule #content .calendar_box .pencil {
+        position: relative;
         margin: auto;
-        padding-top: 45px; }
+        top: 45px; }
       #schedule #content .calendar_box .shade {
         position: absolute;
-        top: 0;
+        top: 0px;
         z-index: -10; }
     #schedule #content #copy {
       padding-top: 40px; }

@@ -36,7 +36,6 @@ body {
   min-width:1280px;
   font-weight: normal;
   color:$typecolor;
-  -webkit-text-size-adjust:100%;
 }
 
 .section_image{
@@ -218,26 +217,61 @@ left:890px;
 
 
 #schedule{
-@include sections; 
+  @include sections; 
   
   #content{
-  @include section_content;
-  
-    #calendar{
-    padding: 70px 0px 50px 0px;
-    margin:$auto;
-    }
-  
-    #copy p{
-    font:1.15em/22px $times $typecolor;
-    letter-spacing:1px;
+    text-align:center;
+    width:950px;
+    margin:40px auto 0px auto; 
+    
+    .calendar_box{
+      display:inline-block;
+      margin: 0px 2px 20px 2px;
+      width:163px;
+      height:208px;
+      border: 8px $typecolor solid;
+      border-radius:3px;
       
-      a{
-        text-decoration:underline; 
-        color:$typecolor;
+      .date{
+        width:40px;
+        height:25px;
+        padding:0px 2px 4px 0px;
+        background-color:$typecolor;
+        border-bottom-right-radius:3px;
+        
+        p{
+          font: 1.25em $gothic;
+          color:$tan; 
+          font-weight:normal;
+        }
+      }
+      
+      .pencil{
+        margin:auto;
+        padding-top:45px;
+      }
+      
+      .shade{
+        position:absolute;
+        top:0;
+        z-index:-10;
       }
     }
   
+    #copy{ 
+      padding-top:40px;
+    
+        p{
+          font:1.15em/22px $times $typecolor;
+          letter-spacing:1px;
+      
+        a{
+          text-decoration:underline; 
+          color:$typecolor;
+        }
+      }
+    }
+    
     #book_me{
     margin: 60px auto 75px auto;
     

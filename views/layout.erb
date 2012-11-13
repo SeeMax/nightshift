@@ -18,12 +18,24 @@
   <script type="text/javascript" src="/javascripts/jquery.nivo.slider.pack.js" ></script>
   <script type="text/javascript" src="/javascripts/jquery.nivo.slider.js" ></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <script type="text/javascript">
   Shadowbox.init({
-    handleOversize:"resize"
-    });
+     handleOversize: "resize", 
+      onOpen: function() { 
+              if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPad/i))) { 
+                      $("#sb-container").css("top", $(window).scrollTop()); 
+                      $(window).bind('scroll', function() { 
+                              $("#sb-container").css("top", $(window).scrollTop()); 
+                      }); 
+              } 
+      }, 
+      onClose: function() { 
+              if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPad/i))) { 
+                      $(window).unbind('scroll'); 
+              } 
+      } 
+});
+
   </script>
 
   <script type="text/javascript">
@@ -38,24 +50,7 @@
   });
   </script>
   
-  <script>
-  Shadowbox.init({ 
-          handleOversize: "resize", 
-          onOpen: function() { 
-                  if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPad/i))) { 
-                          $("#sb-container").css("top", $(window).scrollTop()); 
-                          $(window).bind('scroll', function() { 
-                                  $("#sb-container").css("top", $(window).scrollTop()); 
-                          }); 
-                  } 
-          }, 
-          onClose: function() { 
-                  if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPad/i))) { 
-                          $(window).unbind('scroll'); 
-                  } 
-          } 
-  });
-  </script>
+  
 
   <link rel="icon" href="/images/nighshift_fav.jpg" type="image/jpg">
 

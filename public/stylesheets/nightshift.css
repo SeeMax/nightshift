@@ -3,8 +3,7 @@ body {
   text-align: center;
   min-width: 1280px;
   font-weight: normal;
-  color: dimgrey;
-  -webkit-text-size-adjust: 100%; }
+  color: dimgrey; }
 
 .section_image {
   display: inline_block;
@@ -147,18 +146,40 @@ h2 {
   padding: 55px 40px 0px 40px; }
   #schedule #content {
     text-align: center;
-    min-height: 200px;
-    width: 937px;
-    margin: 0px auto; }
-    #schedule #content #calendar {
-      padding: 70px 0px 50px 0px;
-      margin: 0px auto; }
-    #schedule #content #copy p {
-      font: 1.15em/22px TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif dimgrey;
-      letter-spacing: 1px; }
-      #schedule #content #copy p a {
-        text-decoration: underline;
-        color: dimgrey; }
+    width: 950px;
+    margin: 40px auto 0px auto; }
+    #schedule #content .calendar_box {
+      display: inline-block;
+      margin: 0px 2px 20px 2px;
+      width: 163px;
+      height: 208px;
+      border: 8px dimgrey solid;
+      border-radius: 3px; }
+      #schedule #content .calendar_box .date {
+        width: 40px;
+        height: 25px;
+        padding: 0px 2px 4px 0px;
+        background-color: dimgrey;
+        border-bottom-right-radius: 3px; }
+        #schedule #content .calendar_box .date p {
+          font: 1.25em "landrygothicregular", sans-serif;
+          color: #fefcf5;
+          font-weight: normal; }
+      #schedule #content .calendar_box .pencil {
+        margin: auto;
+        padding-top: 45px; }
+      #schedule #content .calendar_box .shade {
+        position: absolute;
+        top: 0;
+        z-index: -10; }
+    #schedule #content #copy {
+      padding-top: 40px; }
+      #schedule #content #copy p {
+        font: 1.15em/22px TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif dimgrey;
+        letter-spacing: 1px; }
+        #schedule #content #copy p a {
+          text-decoration: underline;
+          color: dimgrey; }
     #schedule #content #book_me {
       margin: 60px auto 75px auto; }
     #schedule #content button {

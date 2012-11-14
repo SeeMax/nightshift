@@ -20,11 +20,6 @@ h2 {
   color: dimgrey;
   font-family: "landrygothicregular", sans-serif; }
 
-#my_clock {
-  font-family: "landrygothicregular", sans-serif;
-  color: #cc6600;
-  border: 1px solid red; }
-
 #top_bar {
   position: relative;
   margin: 0px auto;
@@ -38,6 +33,22 @@ h2 {
     display: inline-block;
     height: 27px;
     width: 27px; }
+  #top_bar #my_clock {
+    position: absolute;
+    top: 4px;
+    left: 85px;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-size: 1.15em;
+    color: #cc6600;
+    margin-top: 10px; }
+  #top_bar p {
+    position: absolute;
+    top: 16px;
+    left: 186px;
+    text-align: left;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    color: #cc6600;
+    font-size: 1.0em; }
   #top_bar #moon {
     position: absolute;
     top: 15px;

@@ -55,22 +55,16 @@ padding-top:30px;
   color:$typecolor;
   font-family: $gothic;
 }
-
   
-#my_clock{
-  font-family:$gothic;
-  color:$orange;
-  border:1px solid red;
-}
 
-#top_bar{
+#top_bar {
   position:relative;
   margin:$auto;
   width:1200px;
   height:50px;
   padding:0px 40px 0px 40px;
    
-  #clock{
+  #clock {
     position:absolute;
     top:10px;
     left:45px;
@@ -79,7 +73,27 @@ padding-top:30px;
     width:27px;
   }
   
-  #moon{
+  #my_clock {
+    position:absolute;
+    top:4px;
+    left:85px;
+    font-family:$times;
+    font-size:1.15em;
+    color:$orange;
+    margin-top:10px;
+  }
+  
+  p {
+    position:absolute;
+    top:16px;
+    left:186px;
+    text-align:left;
+    font-family:$times;
+    color:$orange;
+    font-size:1.0em;
+  }
+  
+  #moon {
     position:absolute;
     top:15px;
     left:555px;
@@ -89,12 +103,12 @@ padding-top:30px;
     z-index:100;
   }
     
-  #icons_sm{
+  #icons_sm {
     position:absolute;
     top:10px;
     left:1110px;
     
-    img{
+    img {
       display:inline-block;
     }
   }

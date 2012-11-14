@@ -1,33 +1,9 @@
-<div id="header_area">
-  
-<div id="start_badge"><img src="images/start_badge.png"></div>
-      <div id="image">
-        <img src="images/available_header.png">
-      </div><!-- image -->
-        <h1>
-          AND 12 + HOURS AHEAD IN THE FUTURE. </br> 
-          You <img src="images/zzz_icon.png"> i  <img src="images/pencil_icon.png">
-          And you wake up to a fat stack of ad-things.
-        </h1>  
-      <div id="guy_icon">
-      <div id="guy_hairline"></div>
-        <div id="guy">
-          <img src="images/contact_icon.png">
-        </div><!-- guy -->
-      </div><!-- guy_icon -->      
+<% if @booked_dates.include?(@date) %>
+  <%= erb :header_booked, :locals => { :date => @date } %>
+<% else %>
+  <%= erb :header_available, :locals => { :date => @date } %>
+<% end %>
 
-
-        <div id="about">      
-          <p>  
-          I’m Nate. I’m a writer. And I’m going to be in Asia for a bit.</br>
-          While I’m here, I’m putting the time difference and my brain to good use.</br> 
-          </br>
-          I’m booked nightly to help with tight deadlines, fresh thinking, and words of all kinds.</br> 
-          Need some ideas? You got it. 50 taglines? No problem. How about a couple scripts? Sure thing.</br>  
-          Spots are limited so check the schedule below, put me to work, and get some sleep. 
-          </p>
-        </div><!-- about -->
-</div><!-- header_area -->
 
     <div class="hairline"></div>
     <div id="schedule">
@@ -35,87 +11,21 @@
         <h2>SCHEDULE</h2>
           <div id="content">
 
-            <div class="calendar_box">
-              <div class="date">
-                <p>26</p>
-              </div><!-- date -->
-                <div class="pencil"><img src="images/pencil_icon.png"></img></div><!-- pencil -->
-            </div><!-- calendar_box -->
+            <% @dates.each do |date| %>
+              <% if @booked_dates.include?(date) %>
+                <%= erb :calendar_booked, :locals => { :date => date } %>
+              <% else %>
+                <%= erb :calendar_available, :locals => { :date => date } %>
+              <% end %>
+            <% end %>
 
-            <div class="calendar_box">
-              <div class="date">
-                <p>27</p>
-              </div><!-- date -->
-                <div class="pencil"><img src="images/pencil_icon.png"></img></div><!-- pencil -->
-            </div><!-- calendar_box -->
+            <% if @booked_dates.include?(@date) %>
+              <%= erb :calcopy_booked, :locals => { :date => @date } %>
+            <% else %>
+              <%= erb :calcopy_available, :locals => { :date => @date } %>
+            <% end %>
 
-            <div class="calendar_box">
-              <div class="date">
-                <p>28</p>
-              </div><!-- date -->
-                <div class="pencil"><img src="images/pencil_icon.png"></img></div><!-- pencil -->
-            </div><!-- calendar_box -->
 
-            <div class="calendar_box">
-              <div class="date">
-                <p>29</p>
-              </div><!-- date -->
-                <div class="pencil"><img src="images/pencil_icon.png"></img></div><!-- pencil -->
-            </div><!-- calendar_box -->
-
-            <div class="calendar_box">
-              <div class="date">
-                <p>30</p>
-              </div><!-- date -->
-                <div class="pencil"><img src="images/pencil_icon.png"></img></div><!-- pencil -->
-            </div><!-- calendar_box -->
-
-            <div class="calendar_box">
-              <div class="date">
-                <p>03</p>
-              </div><!-- date -->
-                <div class="pencil"><img src="images/pencil_icon.png"></img></div><!-- pencil -->
-            </div><!-- calendar_box -->
-
-            <div class="calendar_box">
-              <div class="date">
-                <p>04</p>
-              </div><!-- date -->
-                <div class="pencil"><img src="images/pencil_icon.png"></img></div><!-- pencil -->
-            </div><!-- calendar_box -->
-
-            <div class="calendar_box">
-              <div class="date">
-                <p>05</p>
-              </div><!-- date -->
-                <div class="pencil"><img src="images/pencil_icon.png"></img></div><!-- pencil -->
-            </div><!-- calendar_box -->
-
-            <div class="calendar_box">
-              <div class="date">
-                <p>06</p>
-              </div><!-- date -->
-                <div class="pencil"><img src="images/pencil_icon.png"></img></div><!-- pencil -->
-            </div><!-- calendar_box -->
-
-            <div class="calendar_box">
-              <div class="date">
-                <p>07</p>
-              </div><!-- date -->
-                <div class="pencil"><img src="images/pencil_icon.png"></img></div><!-- pencil -->
-            </div><!-- calendar_box -->
-          <div id="copy">
-            <p>
-            I’m available for projects of all kinds from November 26th through December 7th. </br>
-            If you or your agency needs someone to overdeliver overnight, I’m your guy. </br>
-            Shoot me an email below and we’ll get everything set up.
-            </p>
-          </div><!-- copy -->
-      <div id="book_me">  
-         <button onclick="location.href='mailto:Gagnon.Nate%40gmail.com?subject=Nightshift%20Me&body=I%E2%80%99m%20interested%20in%20putting%20Nightshift.Me%20to%20work%20on%20(insert%20date).%0A%0AThanks%2C%0A(your%20name)%0A(your%20company)';" style="cursor:pointer;">
-           <p>BOOK ME</p><img src="images/book_me_arrow.png">
-        </button>
-      </div><!-- book_me -->
     </div><!-- content -->
   </div><!-- schedule -->
    

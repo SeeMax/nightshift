@@ -1,26 +1,38 @@
-function startclock()
-{
+function renderTime() {
+		d = new Date();
+		localTime = d.getTime();
+		localOffset = d.getTimezoneOffset() * 60000;
+		utc = localTime + localOffset;
+		offset = 7; // Bombay is UTC + 5.5 hours
+		time_in_zone = utc + (3600000*offset);
 
-var thetime=new Date();
-var nhours=thetime.getHours();
-var nmins=thetime.getMinutes();
-var nsecn=thetime.getSeconds();
-var AorP = (nhours >= 12) ? "P.M." : "A.M.";
-if (nhours>=13)
-  nhours-=12;
-if (nhours<1)
- nhours=12;
-if (nsecn<10)
- nsecn="0"+nsecn;
-if (nmins<10)
- nmins="0"+nmins;
- 
-var clock_span = document.getElementById("my_clock");
-clock_span.innerHTML = nhours+":"+nmins+":"+nsecn+" "+AorP;
+    var currentTime = new Date(time_in_zone);
+    var diem = "AM";
+    var h = currentTime.getHours();
+    var m = currentTime.getMinutes();
+    var s = currentTime.getSeconds();
+		
+	
+    if (h == 0) {
+        h = 12
+    } else if (h > 12) {
+        h = h - 12;
+        diem = "PM";
+    }
 
-setTimeout('startclock()',1000);
-} 
+    if (h < 10) {
+        h = "0" + h;
+    }
 
-if (document.getElementById && document.createTextNode) {
-  startclock();
+    if (m < 10) {
+        m = "0" + m;
+    }
+
+    if (s < 10) {
+        s = "0" + s;
+    }
+
+    $("#my_clock").html(h + ":" + m + ":" + s + " " + diem);
+    setTimeout ('renderTime()', 1000);
 }
+renderTime();

@@ -3,7 +3,7 @@ function renderTime() {
 		localTime = d.getTime();
 		localOffset = d.getTimezoneOffset() * 60000;
 		utc = localTime + localOffset;
-		offset = 7; // Bombay is UTC + 5.5 hours
+		offset = 8; // Bombay is UTC + 5.5 hours
 		time_in_zone = utc + (3600000*offset);
 
     var currentTime = new Date(time_in_zone);

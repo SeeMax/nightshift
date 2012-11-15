@@ -14,14 +14,14 @@ $gothic: 'landrygothicregular', sans-serif;
   font-size:1.250em;
 }
 
-@mixin sections{
+@mixin sections {
   text-align:left;    
   width:1200px;
   margin:$auto;
   padding:55px 40px 0px 40px;
 }
 
-@mixin section_content{
+@mixin section_content {
   text-align:center;
   min-height:200px;
   width:937px;
@@ -115,20 +115,20 @@ padding-top:30px;
 }
 
 
-.hairline{ 
+.hairline { 
   min-width:1280px;
   width:100%;
   opacity:.75;
   border-top:1px solid $typecolor;
 }
 
-#guy_hairline{
+#guy_hairline {
   width:100%;
   opacity:.75;
   border-top:1px solid $typecolor;
 }
 
-#thickline{ 
+#thickline { 
   position:absolute;
   top:268px;
   height:269px;
@@ -138,19 +138,19 @@ padding-top:30px;
   z-index:-1;
 }
 
-#start_badge{
+#start_badge {
 position:absolute;
 top: -70px;
 left:890px;
 }
 
-#content{
+#content {
   margin:$auto;
   color:$typecolor;
   font-family: $gothic; 
 }
 
-#header{
+#header {
   width:1200px;
   position:relative;
   display:inline-block;
@@ -163,23 +163,23 @@ left:890px;
     padding: 70px 0px 0px 0px;
   }
 
-  nav{
+  nav {
   padding: 10px 0px 20px 0px;
   display:inline-block;
 
-    ul{
+    ul {
       list-style-type: none;
       text-align:left;
       display:inline;
 
-      li{
+      li {
         padding:0px 30px;
         display:inline;
         color:$typecolor; 
         font-family: $times;
         font-size:0.875em;
 
-        a{
+        a {
           text-decoration:none; 
           color:$typecolor;
         }
@@ -188,38 +188,38 @@ left:890px;
   }
 }   
     
-#header_area{
+#header_area {
     position:relative;
     width:1200px;
     padding:0px 40px;
     margin:$auto;
     
-  #image{
+  #image {
     margin:$auto;
     margin-bottom: 40px;
   }
     
-  h1{
+  h1 {
    @include gothic_type;
    line-height:30px;
   }
   
-  #guy_icon{
+  #guy_icon {
   padding:70px 0px 0px 0px; 
   margin:0px auto -20px auto;
   width:500px;
         
-    #guy{
+    #guy {
       position:relative;
       top:-40px;
     }
   } 
 
-  #about{
+  #about {
     margin:$auto;
     padding: 10px 0px 60px 0px;
         
-    p{
+    p {
       letter-spacing:1px;
       line-height:20px;
       font-size:1.150em;        
@@ -230,16 +230,16 @@ left:890px;
 
 
 
-#schedule{
+#schedule {
   @include sections; 
   
-  #content{
+  #content {
     text-align:center;
     min-width:950px;
     width:950px;
     margin:40px auto 0px auto; 
     
-    .calendar_box{
+    .calendar_box {
       vertical-align:top;
       position:relative;
       top:0;
@@ -250,60 +250,60 @@ left:890px;
       border: 8px $typecolor solid;
       border-radius:3px;
       
-      .date{
+      .date {
         width:40px;
         height:25px;
         padding:0px 2px 4px 0px;
         background-color:$typecolor;
         border-bottom-right-radius:3px;
         
-        p{
+        p {
           font: 1.25em $gothic;
           color:$tan; 
           font-weight:normal;
         }
       }
       
-      .pencil{
+      .pencil {
         position:relative;
         margin:auto;
         top:45px;
       }
       
-      .shade{
+      .shade {
         position:absolute;
         top:0px;
         z-index:-10;
       }
     }
   
-    #copy{ 
+    #copy { 
       padding-top:40px;
     
-        p{
+        p {
           font:1.15em/22px $times $typecolor;
           letter-spacing:1px;
       
-        a{
+        a {
           text-decoration:underline; 
           color:$typecolor;
         }
       }
     }
     
-    #book_me{
+    #book_me {
     margin: 60px auto 75px auto;
     
     }
         
-    button{
+    button {
     vertical-align:middle;
     border-radius:8px;
     border:0px;
     background-color:$orange;     
     padding: 19px 10px 16px 20px;
       
-      p{
+      p { 
       display:inline-block;
       font-family:$gothic;
       font-size:1.750em;
@@ -311,7 +311,7 @@ left:890px;
       }
       
             
-      img{
+      img {
       vertical-align:top;
       display:inline-block;
       margin:0px 10px 0px 8px;
@@ -320,26 +320,26 @@ left:890px;
   }
 }
 
-#work{
+#work {
   @include sections;
 
-  #content{
+  #content {
     margin:$auto;
     text-align:center;
 
-    #my-slideshow{
+    #my-slideshow {
     text-align:center;
     margin:85px auto 70px auto;
     height:600px;
     width:938px;
     
-      .sub{
+      .sub {
         text-align:left;
         position:relative;
         top:77px;
         left:20px;
          
-          p{
+          p {
           font-family:$times;
           color:$orange;
           font-size:1.0em;
@@ -351,33 +351,33 @@ left:890px;
 }
 
 
-#contact{
+#contact { 
   @include sections;
   
-  #content{
+  #content {
   @include section_content;
   padding-bottom: 40px;
   
-    #contact_map{
+    #contact_map {
     padding:15px 0px 35px 0px;
     }
     
-    ul{
+    ul {
     list-style-type:none;
     margin:$auto;
     
-      li{
+      li { 
       display:inline-block;
       padding:0px 35px;
       margin:$auto;
       }
     }
   
-    #thanks{
+    #thanks { 
     padding-top:40px;
     text-align:left;
 
-      p{
+      p {
         text-align:left;
         font: $gothic 1.15em $typecolor;       
         line-height:20px; 
@@ -387,7 +387,7 @@ left:890px;
 }
 
 
-#bottom_border{
+#bottom_border {
   min-width:1280px;
   width:100%;
   height:16px;

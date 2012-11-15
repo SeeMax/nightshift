@@ -5,32 +5,83 @@
 <% end %>
 
 
-    <div class="hairline"></div>
-    <div id="schedule">
-      <img class ="section_image" src="images/schedule_icon.png">
-        <h2>SCHEDULE</h2>
-          <div id="content">
+<div class="hairline"></div>
+  <div id="schedule">
+    <img class ="section_image" src="images/schedule_icon.png">
+      <h2>SCHEDULE</h2>
+    <div id="content">
 
-            <% @dates.each do |date| %>
-              <% if @booked_dates.include?(date) %>
-                <%= erb :calendar_booked, :locals => { :date => date } %>
-              <% else %>
-                <%= erb :calendar_available, :locals => { :date => date } %>
-              <% end %>
-            <% end %>
+<div class="calendar_box">
+  <div class="date">
+    <p>26</p>
+  </div><!-- date -->
+    <div class="pencil"><img src="images/pencil_icon.png"></div><!-- pencil -->
+</div><!-- calendar_box -->
+<div class="calendar_box">
+  <div class="date">
+    <p>27</p>
+  </div><!-- date -->
+    <div class="pencil"><img src="images/pencil_icon.png"></div><!-- pencil -->
+</div><!-- calendar_box -->
+<div class="calendar_box">
+  <div class="date">
+    <p>28</p>
+  </div><!-- date -->
+    <div class="pencil"><img src="images/pencil_icon.png"></div><!-- pencil -->
+</div><!-- calendar_box -->
+<div class="calendar_box">
+  <div class="date">
+    <p>29</p>
+  </div><!-- date -->
+    <div class="pencil"><img src="images/pencil_icon.png"></div><!-- pencil -->
+</div><!-- calendar_box -->
+<div class="calendar_box">
+  <div class="date">
+    <p>30</p>
+  </div><!-- date -->
+    <div class="pencil"><img src="images/pencil_icon.png"></div><!-- pencil -->
+</div><!-- calendar_box -->
+<div class="calendar_box">
+  <div class="date">
+    <p>3</p>
+  </div><!-- date -->
+    <div class="pencil"><img src="images/pencil_icon.png"></div><!-- pencil -->
+</div><!-- calendar_box -->
+<div class="calendar_box">
+  <div class="date">
+    <p>4</p>
+  </div><!-- date -->
+    <div class="pencil"><img src="images/pencil_icon.png"></div><!-- pencil -->
+</div><!-- calendar_box -->
+<div class="calendar_box">
+  <div class="date">
+    <p>5</p>
+  </div><!-- date -->
+    <div class="pencil"><img src="images/pencil_icon.png"></div><!-- pencil -->
+</div><!-- calendar_box -->
+<div class="calendar_box">
+  <div class="date">
+    <p>6</p>
+  </div><!-- date -->
+    <div class="pencil"><img src="images/pencil_icon.png"></div><!-- pencil -->
+</div><!-- calendar_box -->
+<div class="calendar_box">
+  <div class="date">
+    <p>7</p>
+  </div><!-- date -->
+    <div class="pencil"><img src="images/pencil_icon.png"></div><!-- pencil -->
+</div><!-- calendar_box -->
 
-            <% if @booked_dates.include?(@date) %>
-              <%= erb :calcopy_booked, :locals => { :date => @date } %>
-            <% else %>
-              <%= erb :calcopy_available, :locals => { :date => @date } %>
-            <% end %>
 
+<% if @booked_dates.include?(@date) %>
+  <%= erb :calcopy_booked, :locals => { :date => @date } %>
+<% else %>
+  <%= erb :calcopy_available, :locals => { :date => @date } %>
+<% end %>
 
-    </div><!-- content -->
-  </div><!-- schedule -->
-   
-   
-    <div class="hairline"></div>
+  </div><!-- content -->
+</div><!-- schedule -->
+<div class="hairline"></div>
  
  
  
